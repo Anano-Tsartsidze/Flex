@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Flex</title>
+	<title>Flex & Responsive</title>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
@@ -11,7 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 </head>
 <body>
-	<header >
+	<header class="header-wraper" >
 		<div class="container">
 			<div class="d-flex"> 
 				<a class="logo" href="index.html">
@@ -33,6 +33,7 @@
 						</li>
 					</ul>
 				</nav>
+				<div class="right-block">
 				<ul class="social-ul d-flex">
 					<li class="social-li">	
 						<i class="fab fa-google-plus-g"></i>
@@ -43,22 +44,29 @@
 					<li class="social-li">
 						<i class="fab fa-youtube"></i>
 					</li>
-					<li class="social-li">
+					<li class="social-li active">
 						<i class="fas fa-search"></i>
 					</li>
 				</ul>
+				<div class="burger-icon"> 
+					<i class="fas fa-bars burger"></i>
+				</div>
+			</div>
 			</div>
 		</div>
 	</header>
 	<section class="grey-bg">
 		<div class="container">
-			<img class="image-block" src="img/image.jpg" alt="image">
-			<div class="bottom-left" ><p >things aren't always</p>
-			<p >#000000 </p>
-			<p >or </p>
-			<p >#ffffff </p></div>
-			<img class="bottom-right" src="img/logo2.png" alt="logo">
-
+			<div class="image-wrapper p-relative">
+				<img class="image-block" src="img/image.jpg" alt="image">
+				<ul class="text-list p-absolute">
+				<li>things aren't always</li>
+				<li>#000000 </li>
+				<li>or </li>
+				<li>#ffffff </li>
+				</ul>
+				<img class="bottom-right p-absolute" src="img/logo2.png" alt="logo">
+			</div>
 		</div>
 	</section>
 	<section class="blue-bg">
